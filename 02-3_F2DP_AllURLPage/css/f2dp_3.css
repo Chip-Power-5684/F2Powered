@@ -1,0 +1,140 @@
+.field {
+  display: flex;
+}
+
+.pdf1 {
+  justify-content: center;
+}
+
+
+
+.h2 {
+  position: relative;
+  padding: 0.2em 0.5em;
+  background: linear-gradient(to right, rgb(60, 21, 0),rgb(180, 0, 0), rgb(60, 0, 0));
+  width: 1800px;
+  color: white;
+  font-weight: lighter;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.member1 {
+  position: relative;
+  display: flex;
+}
+
+.member1 p {
+  font-size: 40px;
+  margin-left: 35px;
+}
+
+.text_design1 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text_design2 {
+  text-align: left;
+  flex-direction: column;
+}
+
+.URL_design3 {
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.individual1 {
+  display: flex;
+}
+
+.individual2 {
+  display: flex;
+  margin-left: 50px;
+}
+
+.individual2 img {
+  width: 300px;
+  background: linear-gradient(rgb(255, 200, 0), rgb(190, 160, 0));
+}
+
+.spacer1 {
+  padding: 25px;
+}
+
+.link_oya {
+  position: relative;
+}
+
+.link1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .h2 {
+    position: relative;
+    background: linear-gradient(to right, rgb(60, 21, 0),rgb(180, 0, 0), rgb(60, 0, 0));
+    width: 50%;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .member1 {
+    position: relative;
+    display: flex;
+  }
+  
+  .member1 p {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .name_design {
+    color: #ffffff;/*文字色*/
+    background: #262626;/*背景色*/
+    border-left: solid 5px #2f9aff;/*左線*/
+    border-bottom: solid 3px #9a9a9a;/*下線*/
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  }
+  
+  .individual1 {
+    display: flex;
+    margin-left: 5%;
+  }
+  
+  .individual1 img {
+    width: 15%;
+    align-self: flex-start;
+    background: linear-gradient(rgb(255, 200, 0), rgb(190, 160, 0));
+  }
+  
+  .individual2 {
+    position: absolute;
+    display: flex;
+    margin-left: 52.5%;
+  }
+  
+  .individual2 img {
+    width: 30%;
+    align-self: flex-start;
+    background: linear-gradient(rgb(255, 200, 0), rgb(190, 160, 0));
+  }
+  
+  .spacer1 {
+    padding: 25px;
+  }
+}
