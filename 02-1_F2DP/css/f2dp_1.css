@@ -25,6 +25,17 @@
       align-items: center;
       height: 100%;
     }
+
+    header a {
+      color: #ffffff;
+    }
+
+    .header_p {
+      position: absolute;
+      right: 0%;
+      color: #ffffff;
+    }
+
     .logo {
       position: relative;
       display: flex;
