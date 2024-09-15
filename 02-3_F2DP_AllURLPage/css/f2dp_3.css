@@ -6,7 +6,9 @@
   justify-content: center;
 }
 
-
+.pdf1_img {
+  width: 220px;
+}
 
 .h2 {
   position: relative;
@@ -78,10 +80,23 @@
   height: 100%;
 }
 @media screen and (max-width: 480px) {
+  .field {
+    display: block;
+  }
+  
+  .pdf1 {
+    justify-content: center;
+  }
+  
+  .pdf1_img {
+    width: 100px;
+  }
+  
   .h2 {
     position: relative;
+    padding: 0.2em 0.5em;
     background: linear-gradient(to right, rgb(60, 21, 0),rgb(180, 0, 0), rgb(60, 0, 0));
-    width: 50%;
+    width: 1800px;
     color: white;
     font-weight: lighter;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
@@ -91,50 +106,67 @@
   
   .member1 {
     position: relative;
-    display: flex;
+    display: block;
   }
   
   .member1 p {
-    font-size: 14px;
-    margin-left: 10px;
+    margin-left: 35px;
   }
   
-  .name_design {
-    color: #ffffff;/*文字色*/
-    background: #262626;/*背景色*/
-    border-left: solid 5px #2f9aff;/*左線*/
-    border-bottom: solid 3px #9a9a9a;/*下線*/
+  .text_design1 {
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 20px;
     padding-right: 20px;
-    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .text_design2 {
+    text-align: left;
+    flex-direction: column;
+  }
+  
+  .URL_design3 {
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+    font-size: 16px;
   }
   
   .individual1 {
     display: flex;
-    margin-left: 5%;
-  }
-  
-  .individual1 img {
-    width: 15%;
-    align-self: flex-start;
-    background: linear-gradient(rgb(255, 200, 0), rgb(190, 160, 0));
+    padding-left: 20px;
+    padding-bottom: 50px;
   }
   
   .individual2 {
-    position: absolute;
     display: flex;
-    margin-left: 52.5%;
+    margin-left: 50px;
   }
   
   .individual2 img {
-    width: 30%;
-    align-self: flex-start;
+    width: 300px;
     background: linear-gradient(rgb(255, 200, 0), rgb(190, 160, 0));
   }
   
   .spacer1 {
     padding: 25px;
+  }
+  
+  .link_oya {
+    position: relative;
+  }
+  
+  .link1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
