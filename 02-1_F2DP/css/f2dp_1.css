@@ -29,10 +29,81 @@
       position: relative;
       display: flex;
       justify-content: center;
-      width: 400px;
+      height: 80px;
       margin: 0;
       padding: 0;
     }
+
+    .header_content {
+      position: relative;
+      margin-left: 30px;
+      right: 0;
+      background-color: #050505;
+      z-index: 50;
+    }
+
+    .header_content1{
+      margin-top: 0px;
+    }
+
+    .details_summary_inner {
+      font-size: 20px;
+    }
+
+    summary {
+      /* display: list-item;以外を指定してデフォルトの三角形アイコンを消します */
+      display: block;
+    }
+
+    summary::-webkit-details-marker {
+      /* Safariで表示されるデフォルトの三角形アイコンを消します */
+      display: none;
+    }
+
+    /* --------アイコンを作ります-------- */
+.icon {
+  display: block;
+  position: relative;
+  width: 24px;
+  margin-left: 6px;
+  flex-shrink: 0;
+  transform-origin: center 43%;
+  transition: transform 0.4s;
+}
+
+/* アコーディオンが開いた時のスタイル */
+details[open] .icon {
+  transform: rotate(180deg);
+}
+
+/* アイコンのバーのスタイル */
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 3px;
+  background-color: #7050ff;
+}
+
+.icon::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.icon::after {
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+.summary_inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
     .pc_view {
       display: block;
     }
@@ -61,10 +132,11 @@
     }
      .logo {
        position: relative;
-       width: 125px;
+       width: auto;
        vertical-align: middle;
+       height: 20px;
        left: 5px;
-       margin-left: -20px;
+       margin-left: -30px;
        padding: 0px;
       }
       .pc_view {
