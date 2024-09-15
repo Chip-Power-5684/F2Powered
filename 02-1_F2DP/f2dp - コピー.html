@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Sample</title>
+    <style>
+        #details-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <details id="details">
+        <summary>詳細を見る</summary>
+        <div id="content">
+            これは詳細コンテンツです。
+        </div>
+    </details>
+    
+    <div id="details-content"></div>
+
+    <script>
+        const details = document.getElementById('details');
+        const detailsContent = document.getElementById('details-content');
+        const content = document.getElementById('content');
+
+        details.addEventListener('toggle', () => {
+            if (details.open) {
+                detailsContent.innerHTML = content.innerHTML;
+                detailsContent.style.display = 'block';
+            } else {
+                detailsContent.style.display = 'none';
+                detailsContent.innerHTML = '';
+            }
+        });
+    </script>
+</body>
+</html>
